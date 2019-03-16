@@ -6,6 +6,10 @@
   background-size: 3px 6px;
   background-repeat: repeat-y;
 
+  @media screen and (max-width: 980px){
+    flex-basis: 100%;
+  }
+
   &__list {
     list-style-type: none;
 

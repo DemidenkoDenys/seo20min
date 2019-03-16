@@ -29,3 +29,9 @@ h4, .h4{
   line-height: 1.7rem;
   font-weight: normal;
 }
+
+.content{
+  @media screen and (max-width: 980px){
+    flex-basis: 100%;
+  }
+}
