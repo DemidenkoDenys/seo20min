@@ -1,0 +1,19 @@
+{
+  "name": "Seo 20 min (Pix to Pix page)",
+  "version": "0.0.1",
+  "description": "Demidenko Denys resume example project",
+  "author": "Demidenko Denys <demydenkodenys@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.12.2",
+    "npm": ">=2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

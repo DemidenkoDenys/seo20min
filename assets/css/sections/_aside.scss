@@ -1,0 +1,66 @@
+.content-aside {
+  flex-basis: 39%;
+
+  background-image: linear-gradient(to bottom, rgba($color-skyblue, .3) 30%, rgba(255, 255, 255, 0) 4px);
+  background-position: right;
+  background-size: 3px 6px;
+  background-repeat: repeat-y;
+
+  &__list {
+    list-style-type: none;
+
+    & > li {
+      counter-increment: step-counter;
+
+      & * {
+        color: $color-white;
+      }
+
+      &:before {
+        content: counter(step-counter);
+        color: inherit;
+        font-size: 1.9rem;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      h3 {
+        display: inline-block;
+        margin-bottom: 11px;
+      }
+
+      & > ul {
+        font-size: 1.15rem;
+        line-height: 22px;
+        font-weight: bold;
+
+        li {
+          margin-bottom: 5px;
+
+          & > ol {
+            margin-top: 5px;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        h3 {
+          margin-bottom: 18px;
+        }
+      }
+
+      &:nth-child(5) {
+        & > ul > li > ol > li {
+          margin-bottom: 1px;
+        }
+      }
+
+      &:nth-child(4),
+      &:nth-child(6) {
+        & > ul{
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}

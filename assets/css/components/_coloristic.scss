@@ -1,0 +1,16 @@
+.coloristic{
+  @for $i from 1 through length($colors) {
+    & > li:nth-child(#{$i}){
+      color: nth($colors, $i);
+    }
+  }
+}
+@for $i from 1 through length($colors) {
+  .coloristic-#{$i}{
+    counter-reset: list #{$i};
+    & > li:first-child{
+      &:before{ content: counter(list); }
+      color: nth($colors, $i);
+    }
+  }
+}

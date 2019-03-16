@@ -1,0 +1,10 @@
+@for $i from 0 through 100 {
+  .w-#{$i*5}{ width: #{$i*5}px; }
+  .h-#{$i*5}{ height: #{$i*5}px; }
+}
+.h-auto{ height: auto; }
+.w-auto{ width: auto; }
+
+.brad-50{
+  border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+
+.absolute{
+  position: absolute;
+  
+  &-full{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@for $i from 0 through 100 {
+  .z-#{$i}{ z-index: #{$i}; }
+}
+
+.relative{
+  position: relative;
+}
+
+.dib, .d-ib{
+  display: inline-block;
+}
+
+.dn, .dnone, .d-none{
+  display: none;
+}
+
+.vam, .va-m{
+  vertical-align: middle;
+}
+
+.vat, .va-t{
+  vertical-align: top;
+}
+
+@each $pos in $positions {
+  $letter: str-slice($pos, 1, 1);
+
+  @for $i from -100 through 100 {
+    .#{$letter}-#{$i*5}{ #{$pos}: #{$i*5}px; }
+  }
+  @for $i from -10 through 10 {
+    .#{$letter}-#{$i}{ #{$pos}: #{$i}px; }
+  }
+
+}
+

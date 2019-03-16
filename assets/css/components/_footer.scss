@@ -1,0 +1,12 @@
+.site-footer {
+  justify-content: space-between;
+  padding: 5px 50px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  background: linear-gradient(to bottom, $color-white, $color-grey);
+
+  &__copyright{
+    font-size: 1.23rem;
+  }
+}

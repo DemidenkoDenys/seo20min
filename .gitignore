@@ -1,0 +1,13 @@
+.log
+.idea/
+.htaccess
+robots.txt
+directory/
+logs/
+dist/
+gulp/
+bower_components/
+node_modules/
+README.md
+gulpfile.js
+

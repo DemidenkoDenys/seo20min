@@ -1,0 +1,23 @@
+@each $p in $positions {
+  $letter: str-slice($p, 1, 1);
+
+  .m#{$letter}-auto{ margin-#{$p}: auto; }
+
+  @for $i from 0 through 30 {
+    *.m#{$letter}-#{$i}{ margin-#{$p}: #{$i}px; }
+    *.p#{$letter}-#{$i}{ padding-#{$p}: #{$i}px; }
+  }
+
+  @for $i from 6 through 40 {
+    .m#{$letter}-#{$i*5}{ margin-#{$p}: #{$i*5}px; }
+    .p#{$letter}-#{$i*5}{ padding-#{$p}: #{$i*5}px; }
+  }
+}
+
+@for $i from 0 through 20 {
+  .m-#{$i}{ margin: #{$i}px; }
+}
+
+@for $i from 0 through 20 {
+  .p-#{$i}{ padding: #{$i}px; }
+}
